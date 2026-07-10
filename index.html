@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual da Maquiagem Perfeita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ESTILOS CSS --- */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        header nav a:hover {
+            color: #d18a8a;
+        }
+
+        /* Seção Hero (Destaque) */
+        .hero {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 80px 20px;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h2 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            flex: 1;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d18a8a;
+            color: #ffffff;
+            padding: 12px 28px;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b56b6b;
+        }
+
+        /* Seção de Dicas */
+        .dicas-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #888;
+        }
+
+        /* Grid e Cards */
+        .dicas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+
+        /* Responsividade Básica para Celular */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+            .hero-image {
+                width: 100%;
+                height: 250px;
+            }
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Manual da Make</h1>
+            <nav>
+                <ul>
+                    <li><a href="#dicas">Dicas Principais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero container">
+            <div class="hero-text">
+                <h2>Realce sua beleza com dicas simples e profissionais.</h2>
+                <p>Descubra segredos que vão transformar sua rotina de beleza e te deixar pronta para qualquer ocasião.</p>
+                <a href="#dicas" class="btn">Explorar Dicas</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=600&auto=format&fit=crop" alt="Mulher aplicando maquiagem" class="hero-image">
+        </section>
+
+        <section id="dicas" class="dicas-section container">
+            <div class="section-title">
+                <h2>As Mais Pedidas</h2>
+                <p>Nossos truques favoritos para um resultado incrível</p>
+            </div>
+
+            <div class="dicas-grid">
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=500&auto=format&fit=crop" alt="Produtos de pele e bases" class="card-img">
+                    <div class="card-content">
+                        <h3>1. O Segredo da Base Fluida</h3>
+                        <p>Para um acabamento "pele de porcelana", aplique bases fluidas com um pincel duo fiber em movimentos circulares. Finalize dando batidinhas com uma esponja úmida para um visual sem marcas.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=500&auto=format&fit=crop" alt="Paleta de sombras para os olhos" class="card-img">
+                    <div class="card-content">
+                        <h3>2. Esfumado Sem Segredos</h3>
+                        <p>A chave para o esfumado perfeito é a paciência e a escolha do pincel. Use pincéis fofos e faça movimentos circulares e de "vai e vem". Comece com pouca sombra e adicione cor aos poucos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1526045431048-f857369aba09?q=80&w=500&auto=format&fit=crop" alt="Pincéis de maquiagem e iluminador" class="card-img">
+                    <div class="card-content">
+                        <h3>3. Contorno e Iluminador na Medida</h3>
+                        <p>Use o contorno para criar sombras suaves e afinar o rosto. O iluminador deve ser aplicado nos pontos altos (maçãs do rosto, ponta do nariz) para destacar a luz natural. Equilíbrio é tudo!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Manual da Make. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
